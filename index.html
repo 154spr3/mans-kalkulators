@@ -1,1 +1,59 @@
-
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<title>Mans kalkulators</title>
+<style>
+body {
+    font-family: Arial;
+    text-align: center;
+    background: lightblue;
+    padding: 40px;
+}
+.box {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    max-width: 300px;
+    margin: auto;
+}
+input {
+    padding: 10px;
+    margin: 5px;
+    width: 80%;
+}
+button {
+    padding: 12px;
+    margin: 5px;
+    background: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+<div class="box">
+<h1>Mans kalkulators</h1>
+<input type="number" id="a" placeholder="Pirmais skaitlis">
+<input type="number" id="b" placeholder="Otrais skaitlis">
+<br>
+<button onclick="calc('+')">+</button>
+<button onclick="calc('-')">−</button>
+<button onclick="calc('*')">×</button>
+<button onclick="calc('/')">÷</button>
+<h3>Rezultāts:</h3>
+<p id="rez">?</p>
+</div>
+<script>
+function calc(op) {
+    let a = Number(document.getElementById('a').value);
+    let b = Number(document.getElementById('b').value);
+    let r;
+    if (op === '+') r = a + b;
+    if (op === '-') r = a - b;
+    if (op === '*') r = a * b;
+    if (op === '/') r = b === 0 ? 'Ar nulli dalīt nedrīkst!' : a / b;
+    document.getElementById('rez').textContent = r;
+}
+</script>
