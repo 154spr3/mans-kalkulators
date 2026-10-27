@@ -1,11 +1,17 @@
-Mans kalku
+Mans kalkulators 
+
 Projekta apraksts
+
 Šis projekts ir vienkāršs kalkulators, ko izveidoju datorikas stundas ietvaros. Kalkulators ļauj veikt matemātiskas darbības ar diviem skaitļiem.
 
 Izmantotās tehnoloģijas
+
 HTML — mājaslapas struktūrai.
+
 CSS — dizainam un krāsām.
+
 JavaScript — aprēķinu veikšanai.
+
 Funkcijas
 Saskaitīšana (+)
 Atņemšana (-)
